@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant 1</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">FoodDelivery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Restaurant Details -->
+    <section class="restaurant-details py-5">
+        <div class="container">
+            <center>
+            <h2 class="text-center mb-4">The Juicy Spot</h2>
+            <img src="https://img.freepik.com/free-photo/cocktail-wooden-table-restaurant_23-2147936121.jpg" alt="Restaurant 1" class="img-fluid mb-4">
+            </center>
+           
+            <p class="text-center">Description: Discover the freshest flavors at The Juicy Spot, where every sip is a burst of pure, natural goodness. We’re passionate about providing you with juices and smoothies that are not only delicious but also packed with nutrients. Our commitment to quality means you get only the best from farm to glass</p>
+            
+            <h3>Menu</h3>
+            <div class="row">
+                <!-- Menu Item 1 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://img.freepik.com/premium-photo/isolated-fresh-orange-juice-with-fruits_756535-4352.jpg" alt=" Fresh Orange Juice">
+                        <h5>Fresh Orange Juice</h5>
+                        <p>Price: ₹120</p>
+                        <input type="number" id="Fresh Orange Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Fresh Orange Juice', 120)">
+                        <p>Total Price: ₹<span id="Fresh Orange Juice-price">120</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://thumbs.dreamstime.com/b/fresh-pineapple-juice-wooden-table-chilled-glass-mint-dark-background-320901724.jpg" alt="Pineapple Juice">
+                        <h5>Pineapple Juice</h5>
+                        <p>Price: ₹150</p>
+                        <input type="number" id="Pineapple Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Pineapple Juice', 150)">
+                        <p>Total Price: ₹<span id="Pineapple Juice-price">150</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPOBZaocbQXyHa_efE_NE7uQkBFkQo7tg0Ig&s" alt="Mango Juice">
+                        <h5>Mango Juice</h5>
+                        <p>Price: ₹140</p>
+                        <input type="number" id="Mango Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Mango Juice', 140)">
+                        <p>Total Price: ₹<span id="Mango Juice-price">140</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://img.freepik.com/premium-photo/glass-apple-juice-fruits-natural-background_614506-360.jpg" alt="Apple Juice">
+                        <h5>Apple Juice</h5>
+                        <p>Price: ₹130</p>
+                        <input type="number" id="Apple Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Apple Juicer', 130)">
+                        <p>Total Price: ₹<span id="Apple Juice-price">130</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://static.vecteezy.com/system/resources/previews/029/543/597/non_2x/a-glass-of-watermelon-juice-with-fresh-watermelon-on-wooden-table-outdoors-ai-generated-pro-photo.jpg" alt="Watermelon Juice">
+                        <h5>Watermelon Juice</h5>
+                        <p>Price: ₹110</p>
+                        <input type="number" id="Watermelon Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Watermelon Juice', 110)">
+                        <p>Total Price: ₹<span id="Watermelon Juice-price">110</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://thumbs.dreamstime.com/b/elegant-glass-pomegranate-juice-ai-generative-elegant-glass-pomegranate-juice-design-background-instagram-facebook-324095069.jpg" alt="pomegranate Juice">
+                        <h5>pomegranate Juice</h5>
+                        <p>Price: ₹160</p>
+                        <input type="number" id="pomegranate Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('pomegranate Juice', 160)">
+                        <p>Total Price: ₹<span id="pomegranate Juice-price">160</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 7 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://media.istockphoto.com/id/1455706684/photo/freshly-squeezed-grape-juice-on-a-rustic-wooden-table-healthy-eating.jpg?s=612x612&w=0&k=20&c=mMmrtnHzIwnxnwiI9vO5AJjphjZVDuLBRS_pfYgooNE=" alt="Grape Juice">
+                        <h5>Grape Juice</h5>
+                        <p>Price: ₹140</p>
+                        <input type="number" id="Grape Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Grape Juice',140)">
+                        <p>Total Price: ₹<span id="Grape Juice-price">140</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 8 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://img.freepik.com/premium-photo/lemon-juice-wooden-table-with-lemons-nature-lemon-table_1205263-31269.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726358400&semt=ais_hybrid" alt="Lemon Juice">
+                        <h5>Lemon Juice</h5>
+                        <p>Price: ₹100</p>
+                        <input type="number" id="Lemon Juice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Lemon Juice', 100)">
+                        <p>Total Price: ₹<span id="Lemon Juice-price">100</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Footer -->
+      <footer class="text-center py-3">
+        <p>&copy; 2024 FoodDelivery. All rights reserved.</p>
+    </footer>
+    <!-- Footer Section -->
+<footer class="footer mt-auto py-5 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Logo and Description -->
+            <div class="col-md-4">
+                <img src="pic1.jpeg" width="100" height="100" alt="Logo" class="footer-logo mb-3">
+                <p>We provide fresh and healthy meals like burgers, French fries, sandwiches, and top cuisines with our special ingredients.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Center: Address and Opening Hours -->
+            <div class="col-md-4">
+                <h5>ADDRESS</h5>
+                <p>Bengaluru to Salem National Highway</p>
+                <p>Dindigul, Tamil Nadu</p>
+                <p>Phone: +91 9891234567</p>
+                <p>Email: info@yourrestaurant.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>OPENING HOURS</h5>
+                <p>Monday - Friday: 9 AM - 10 PM</p>
+                <p>Saturday - Sunday: Closed</p>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function updatePrice(item, pricePerItem) {
+            var quantity = document.getElementById(item + '-quantity').value;
+            var totalPrice = quantity * pricePerItem;
+            document.getElementById(item + '-price').textContent = totalPrice;
+        }
+    </script>
+</body>
+</html>

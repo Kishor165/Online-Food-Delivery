@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant 1</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">FoodDelivery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Restaurant Details -->
+    <section class="restaurant-details py-5">
+        <div class="container">
+            <center>
+            <h2 class="text-center mb-4">The Carnivore's Haven</h2>
+            <img src="https://res.cloudinary.com/purnesh/image/upload/w_540,f_auto,q_auto:eco,c_limit/le-cirque-table.jpg" alt="Restaurant 1" class="img-fluid mb-4">
+            </center>
+           
+            <p class="text-center">Description: Welcome to The Carnivore's Haven, a premier hotel dedicated to celebrating the art of meat in every dish. Nestled in a vibrant city center, our establishment combines luxurious accommodations with an exceptional dining experience tailored for meat enthusiasts.</p>
+            
+            <h3>Menu</h3>
+            <div class="row">
+                <!-- Menu Item 1 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://static.tnn.in/thumb/msid-105675192,thumbsize-89532,width-1280,height-720,resizemode-75/105675192.jpg?quality=100" alt="Chicken Biriyani">
+                        <h5>Chicken Biryani</h5>
+                        <p>Price: ₹100</p>
+                        <input type="number" id="Chicken Biryani-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Chicken Biryani', 100)">
+                        <p>Total Price: ₹<span id="Chicken Biryani-price">100</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://bonmasala.com/wp-content/uploads/2022/10/mutton-biriyani-recipe.jpeg" alt="mutton Biryani">
+                        <h5>mutton Biryani</h5>
+                        <p>Price: ₹200</p>
+                        <input type="number" id="mutton Biryani-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('mutton Biryani', 200)">
+                        <p>Total Price: ₹<span id="mutton Biryani-price">200</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://c.ndtvimg.com/2021-05/tj7sdqj8_parotta_625x300_14_May_21.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=675" alt="parotta">
+                        <h5>parotta</h5>
+                        <p>Price: ₹20</p>
+                        <input type="number" id="parotta-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('parotta', 20)">
+                        <p>Total Price: ₹<span id="parotta-price">20</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://images.jdmagicbox.com/quickquotes/listicle/listicle_1716063982110_kd05m_1000x563.jpg" alt="Chilli Chicken">
+                        <h5>Chilli Chicken</h5>
+                        <p>Price: ₹80</p>
+                        <input type="number" id="Chilli Chicken-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Chilli Chicken', 80)">
+                        <p>Total Price: ₹<span id="Chilli Chicken-price">80</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgRerNPzZ6LWDqaffrJGJ-QUNhxGTHX6NVA&s" alt="Chicken gravy">
+                        <h5>Chicken gravy</h5>
+                        <p>Price: ₹80</p>
+                        <input type="number" id="Chicken gravy-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Chicken gravy', 80)">
+                        <p>Total Price: ₹<span id="Chicken gravy-price">80</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToMozkkZv6pQonP3nn1BlXT2uLTWJxeshxYA&s" alt="Grilled Chicken">
+                        <h5>Grilled Chicken</h5>
+                        <p>Price: ₹270</p>
+                        <input type="number" id="Grilled Chicken-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Grilled Chicken', 270)">
+                        <p>Total Price: ₹<span id="Grilled Chicken-price">270</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 7 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://i.ytimg.com/vi/KyxW9rnKPKQ/maxresdefault.jpg" alt="Chicken Rice">
+                        <h5>Chicken Rice</h5>
+                        <p>Price: ₹90</p>
+                        <input type="number" id="Chicken Rice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Chicken Rice', 90)">
+                        <p>Total Price: ₹<span id="Chicken Rice-price">90</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 8 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT10Z4YgZ7cfOedyyIebAZheTVDPrl8nBnrVA&s" alt="Egg Rice">
+                        <h5>Egg Rice</h5>
+                        <p>Price: 70</p>
+                        <input type="number" id="Egg Rice-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('Egg Rice', 70)">
+                        <p>Total Price: ₹<span id=Egg Rice-price">250</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>&copy; 2024 FoodDelivery. All rights reserved.</p>
+</footer>
+<!-- Footer Section -->
+<footer class="footer mt-auto py-5 bg-dark text-light">
+<div class="container">
+    <div class="row">
+        <!-- Left Side: Logo and Description -->
+        <div class="col-md-4">
+            <img src="pic1.jpeg" width="100" height="100" alt="Logo" class="footer-logo mb-3">
+            <p>We provide fresh and healthy meals like burgers, French fries, sandwiches, and top cuisines with our special ingredients.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Center: Address and Opening Hours -->
+        <div class="col-md-4">
+            <h5>ADDRESS</h5>
+            <p>Bengaluru to Salem National Highway</p>
+            <p>Dindigul, Tamil Nadu</p>
+            <p>Phone: +91 9891234567</p>
+            <p>Email: info@yourrestaurant.com</p>
+        </div>
+
+        <div class="col-md-4">
+            <h5>OPENING HOURS</h5>
+            <p>Monday - Friday: 9 AM - 10 PM</p>
+            <p>Saturday - Sunday: Closed</p>
+            <nav>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function updatePrice(item, pricePerItem) {
+            var quantity = document.getElementById(item + '-quantity').value;
+            var totalPrice = quantity * pricePerItem;
+            document.getElementById(item + '-price').textContent = totalPrice;
+        }
+    </script>
+</body>
+</html>

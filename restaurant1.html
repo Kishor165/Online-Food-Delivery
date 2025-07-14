@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pizza & Burger Fusion</title>
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/02/41/30/72/360_F_241307210_MjjaJC3SJy2zJZ6B7bKGMRsKQbdwRSze.jpg">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .menu-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">FoodDelivery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="restaurants.html">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Restaurant Details -->
+    <section class="restaurant-details py-5">
+        <div class="container">
+            <center>
+            <h2 class="text-center mb-4">The Pizza & Burger Fusion</h2>
+            <img src="https://b.zmtcdn.com/data/pictures/6/6506066/3ca3c0a28b06ec3399cfe3d48a23bdb8.jpg?fit=around|960:500&crop=960:500;*,*" alt="Restaurant 1" class="img-fluid mb-4">
+            </center>
+            <p class="text-center"></p>
+            <p class="text-center">Welcome to The Pizza & Burger Fusion, where we elevate your favorite comfort foods to new heights! At our vibrant eatery, we combine the best of both worlds—delicious, handcrafted pizzas and mouthwatering gourmet burgers—into a unique dining experience.</p>
+            
+            <h3>Menu</h3>
+            <div class="row">
+                <!-- Menu Item 1 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/26/d112a6d7-d173-4ca7-a5ee-40f845719d18_856292.JPG" alt="pizza" width="400" height="400">
+                        <h5>Pizza</h5>
+                        <p>Price: ₹100</p>
+                        <input type="number" id="pizza-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('pizza', 100)">
+                        <p>Total Price: ₹<span id="pizza-price">100</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2014/05/Epic-summer-salad-hub-2646e6e.jpg?quality=90&webp=true&resize=375,341" alt="Salad"  width="400" height="400">
+                        <h5>Salad</h5>
+                        <p>Price: ₹200</p>
+                        <input type="number" id="salad-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('salad', 200)">
+                        <p>Total Price: ₹<span id="salad-price">200</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/05/masala-pasta.jpg" alt="Pasta"  width="400" height="400">
+                        <h5>Pasta</h5>
+                        <p>Price: ₹150</p>
+                        <input type="number" id="pasta-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('pasta', 150)">
+                        <p>Total Price: ₹<span id="pasta-price">150</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg" alt="Burger"  width="400" height="400">
+                        <h5>Burger</h5>
+                        <p>Price: ₹120</p>
+                        <input type="number" id="burger-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('burger', 120)">
+                        <p>Total Price: ₹<span id="burger-price">120</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8N0tUijh_HHnvvTSUA-vNph2IuwTKWUgoYg&s" alt="Fries"  width="400" height="400">
+                        <h5>Fries</h5>
+                        <p>Price: ₹80</p>
+                        <input type="number" id="fries-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('fries', 80)">
+                        <p>Total Price: ₹<span id="fries-price">80</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgA47GHL35jZlaar8KhowAFHlzGWNQ2CDrg&s" alt="Ice Cream"  width="400" height="400">
+                        <h5>Ice Cream</h5>
+                        <p>Price: ₹60</p>
+                        <input type="number" id="icecream-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('icecream', 60)">
+                        <p>Total Price: ₹<span id="icecream-price">60</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 7 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFBy-vplZChIBcQAJ8rmPdKsVzZ7Ph9Ad3Fg&s" alt="Soup"  width="400" height="400">
+                        <h5>Soup</h5>
+                        <p>Price: ₹90</p>
+                        <input type="number" id="soup-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('soup', 90)">
+                        <p>Total Price: ₹<span id="soup-price">90</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                </div>
+                <!-- Menu Item 8 -->
+                <div class="col-md-3">
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVG6q-0-NXHhKIkVaZdbdaj0SRGyZOHSdm-w&s" alt="Cake"  width="200" height="200">
+                        <h5>Cake</h5>
+                        <p>Price: ₹250</p>
+                        <input type="number" id="cake-quantity" class="form-control mb-2" min="1" value="1" oninput="updatePrice('cake', 250)">
+                        <p>Total Price: ₹<span id="cake-price">250</span></p>
+                        <button class="btn btn-primary">Order</button>
+                    </div>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>&copy; 2024 FoodDelivery. All rights reserved.</p>
+    </footer>
+    <!-- Footer Section -->
+<footer class="footer mt-auto py-5 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <!-- Left Side: Logo and Description -->
+            <div class="col-md-4">
+                <img src="pic1.jpeg" width="100" height="100" alt="Logo" class="footer-logo mb-3">
+                <p>We provide fresh and healthy meals like burgers, French fries, sandwiches, and top cuisines with our special ingredients.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Center: Address and Opening Hours -->
+            <div class="col-md-4">
+                <h5>ADDRESS</h5>
+                <p>Bengaluru to Salem National Highway</p>
+                <p>Dindigul, Tamil Nadu</p>
+                <p>Phone: +91 9891234567</p>
+                <p>Email: info@yourrestaurant.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>OPENING HOURS</h5>
+                <p>Monday - Friday: 9 AM - 10 PM</p>
+                <p>Saturday - Sunday: Closed</p>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="Login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function updatePrice(item, pricePerItem) {
+            var quantity = document.getElementById(item + '-quantity').value;
+            var totalPrice = quantity * pricePerItem;
+            document.getElementById(item + '-price').textContent = totalPrice;
+        }
+    </script>
+</body>
+</html>
+
